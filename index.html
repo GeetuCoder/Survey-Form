@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey_form</title>
+    <!-- internal CSS -->
+    <style>
+        body {
+        text-align: center;
+      background-color: aqua;
+         padding-left: 25%;
+         padding-right: 25%;
+        height: 400px;
+        width: 400px;
+        margin: auto;
+     }
+     #content{
+        background-color: whitesmoke;
+      
+        width: 666px
+        align-items: center;
+        padding-top: 25px ;
+        padding-bottom: 25px;
+        align-content: center;
+        align-self: center;
+     }
+
+    </style>
+    
+</head>
+<body>
+    <!-- <div style="background-color: skyblue background: #87CEEB;">Survey Form</div> -->
+    
+    <!-- <h4 style="background-color: skyblue" ;>Let us now how we improve our freecodecamp</h4> -->
+    <h1 >Survey Form</h1>
+  <form action="backend.php">
+    
+        <div id="content">
+            <div>
+        Name : <input type="text" name="myname" placeholder="Enter your Name">
+    </div>
+       <br>
+       <div>
+        Email: <input type="email" name="myemail" placeholder="Enter your Email">
+    </div>
+        <br>
+        <div>
+       Age: <input type="number" name="myage" placeholder="Age">
+    </div>
+    <br>
+    <div>
+        <label for="myrole">Which option best describes your current role?</label>
+        <select name="role" id="myrole" >
+            <option value="stu">Student </option>
+            <option value="fnj">Professional</option>
+            <option value="ncdj"> Retired</option>
+        </select>
+    </div>
+    <br>
+    <div>
+      How likely is that you would recommend freecodecamp to a friend? Definitely <input type="radio" name="mychoice" >
+      <br> May Be <input type="radio" name="mychoice" > <br> Not Sure <input type="radio" name="mychoice" >
+
+    </div>
+     <br>
+
+    <div>
+        <label for="FCC">What do you like most in FCC?</label>
+        <select name="fcc" id="FCC">
+            <option value="ndk">Select an Option</option>
+            <option value="a">A </option>
+            <option value="b">B</option>
+            <option value="c"> C</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <div>
+      How likely is that you would recommend freecodecamp to a friend? Definitely <input type="radio" name="mychoice" >
+      <br> May Be <input type="radio" name="mychoice" > <br> Not Sure <input type="radio" name="mychoice" >
+
+    </div>
+    <br>
+    <div>
+    Things that should be improved in future(Check all that apply)   Front-end Projects<input type="checkbox" name="mc1" > <br> Back-End Projects <input type="checkbox" name="mc2" > <br> Data Visualisation <input type="checkbox" name="mc3" >
+
+    </div>
+    <br>
+    <button name="submit" > Submit Now</button>
+</div>
+</body>
+</html> 
+
